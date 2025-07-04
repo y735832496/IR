@@ -1,0 +1,90 @@
+
+        <html>
+        <head>
+            <title>模型评估报告</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                h1, h2 { color: #333; }
+                .section { margin: 20px 0; }
+                img { max-width: 100%; }
+            </style>
+        </head>
+        <body>
+            <h1>模型评估报告</h1>
+            
+            <div class="section">
+                <h2>评估指标</h2>
+                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>f1-score</th>
+      <th>support</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>时间相关</th>
+      <td>0.952381</td>
+      <td>1.000000</td>
+      <td>0.975610</td>
+      <td>40.000000</td>
+    </tr>
+    <tr>
+      <th>新闻相关</th>
+      <td>1.000000</td>
+      <td>0.969697</td>
+      <td>0.984615</td>
+      <td>33.000000</td>
+    </tr>
+    <tr>
+      <th>天气相关</th>
+      <td>1.000000</td>
+      <td>0.968750</td>
+      <td>0.984127</td>
+      <td>32.000000</td>
+    </tr>
+    <tr>
+      <th>accuracy</th>
+      <td>0.980952</td>
+      <td>0.980952</td>
+      <td>0.980952</td>
+      <td>0.980952</td>
+    </tr>
+    <tr>
+      <th>macro avg</th>
+      <td>0.984127</td>
+      <td>0.979482</td>
+      <td>0.981451</td>
+      <td>105.000000</td>
+    </tr>
+    <tr>
+      <th>weighted avg</th>
+      <td>0.981859</td>
+      <td>0.980952</td>
+      <td>0.981036</td>
+      <td>105.000000</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+            
+            <div class="section">
+                <h2>混淆矩阵</h2>
+                <img src="confusion_matrix.png" alt="混淆矩阵">
+            </div>
+            
+            <div class="section">
+                <h2>ROC曲线</h2>
+                <img src="roc_curves.png" alt="ROC曲线">
+            </div>
+            
+            <div class="section">
+                <h2>精确率-召回率曲线</h2>
+                <img src="pr_curves.png" alt="精确率-召回率曲线">
+            </div>
+        </body>
+        </html>
+        
